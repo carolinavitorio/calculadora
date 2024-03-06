@@ -7,7 +7,7 @@
  
  Em busca de me aprimorar e crescer profissionalmente.
 
- -Funcionalidade
+ -Funcionalidades
 
  Tem como objetivo, realizar contas básicas de adição, subtração, divisão e multiplicação.
 
