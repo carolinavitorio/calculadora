@@ -12,6 +12,3 @@
 
  #Tecnologias Utilizadas
 
-![html](https://github.com/carolinavitorio/calculadora/assets/51249735/fcbc4e7b-f01b-4d30-9998-1fffe0c24862)
-![CSS3_logo_and_wordmark svg](https://github.com/carolinavitorio/calculadora/assets/51249735/26f50145-8437-4c3f-96f2-6b13e741386f)
-![Unofficial_JavaScript_logo_2 svg](https://github.com/carolinavitorio/calculadora/assets/51249735/124cbd45-769e-4072-93b8-06bdd9ca0174)
