@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
 </head>
-<body>
-    
+<link rel="stylesheet" href="formatacao.css">
+
+<body class="back">
+    <div id="opacidade" style="height:100vh;">
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+            <p id="resultado"> </p>
+            <table>
+                <tr>
+                    <td colspan="2"><button onclick="clean()" style="width: 106px;">C</button></td>
+                    <td><button onclick="back()">
+                            < </button>
+                    </td>
+                    <td><button onclick="insert('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('7')">7</button></td>
+                    <td><button onclick="insert('8')">8</button></td>
+                    <td><button onclick="insert('9')">9</button></td>
+                    <td><button onclick="insert('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('4')">4</button></td>
+                    <td><button onclick="insert('5')">5</button></td>
+                    <td><button onclick="insert('6')">6</button></td>
+                    <td><button onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insert('1')">1</button></td>
+                    <td><button onclick="insert('2')">2</button></td>
+                    <td><button onclick="insert('3')">3</button></td>
+                    <td><button onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button onclick="insert('0')" style="width: 162px;">0</button></td>
+                    <td><button onclick="insert(',')">,</button></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><button onclick="calcular()" style="width: 220px;">=</button></td>
+                </tr>
+            </table>
+        </div>
+        </img>
+
+        <script>
+
+            function insert(num) {
+                var numero = document.getElementById('resultado').innerHTML;
+                document.getElementById('resultado').innerHTML = numero + num;
+            }
+
+            function clean() {
+                document.getElementById('resultado').innerHTML = " ";
+            }
+
+            function back() {
+                var resultado = document.getElementById('resultado').innerHTML;
+                document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length - 1);
+            }
+
+            function calcular() {
+                var resultado = document.getElementById('resultado').innerHTML;
+
+                if (resultado) {
+                    document.getElementById('resultado').innerHTML = eval(resultado);
+                }
+                else {
+                    document.getElementById('resultado').innerHTML = "";
+                }
+            }
+        </script>
 </body>
+
 </html>
