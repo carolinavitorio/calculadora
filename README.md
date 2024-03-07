@@ -16,13 +16,13 @@
  -CSS
  -JavaScript
 
-#Instalação
+# Instalação
 
 Clone o repositório
 
 git clone git@github.com:carolinavitorio/calculadora.git
 
-#Visualização do código em funcionamento HTML/CSS/JS
+# Visualização do código em funcionamento HTML/CSS/JS
 
 Navegue até a pasta que salvou o documento, e abra o arquivo html no browser.
  
